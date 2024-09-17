@@ -1,0 +1,124 @@
+html{
+    font-size: 16px;
+}
+
+
+.address{
+    /* чтоб текст был справа */
+    text-align: end;
+}
+
+    /* изменим цвет ссылки в address*/
+.address a {
+    color: inherit;
+    text-decoration: none;
+}
+
+    /* изменим поведение при наведении мыши на ссылку */
+
+    .address a:hover {
+        color: red;
+        font-size: 150%;
+    }
+
+
+.nav {
+    background-color: rgba(250, 250, 250, 200);
+    /* скрепляем навигацию */
+    position: sticky;
+    top: 0rem;
+    /* задаем навигацию */
+    z-index: 3;
+}
+
+.nav__list {
+    display: flex;
+    /* чтоб части меню не переносились на другую строку */
+    flex-flow: row nowrap;
+    /* избавляемся от кружочков */
+    list-style: none;
+}
+
+/* задаем пространство между элементами */
+.nav_item {
+    padding: 1rem 0;
+}
+
+
+.nav__link {
+    padding: 1rem;
+    text-decoration: none;
+    /* делаем вертикальную черту */
+    border-left: 1px solid #ccc;
+    color: #111;
+}
+
+/* изменяем стиль при наведении */
+.nav__link:hover {
+    background-color: #f11c;
+    color: #ccc;
+}
+
+.hero{
+    background-image: url('img/R.jpg');
+    /* Создаем эффект параллакса */
+    background-attachment: fixed;
+    /* Центруем картинку */
+    background-repeat: repeat;
+    /* картинка должна занять все пространство */
+    background-size: cover;
+}
+
+.header {
+    color: azure;
+    text-shadow: 3px 3px 3px #000;
+    display: flex;
+    /* создаем пространство между элементами в header */
+    justify-content: space-around;
+    /* границы */
+    padding: 3rem;
+    /* фон */
+    background-color: #0a0a0a22;
+    /* центруем */
+    align-items: center;
+}
+
+.header-caotion{
+    text-align: center;
+    /* скрепляем */
+    position: sticky;
+    top: 1.5rem;
+}
+
+.hero-form{
+    display: flex;
+    flex-flow: column nowrap;
+    /* создаем пространство */
+    gap: 0.5rem;
+    /* создаем рамку в форме*/
+    border: 0.25rem solid orange; 
+    border-radius: 1rem; 
+    padding: 1rem;
+    background-color: #0a0a0a7a;
+}
+
+.form-lable{
+ font-size: 1.5rem;   
+}
+
+.form-input{
+    font-size: 1.5rem;
+    padding: 0.5rem; 
+    border: 0.25rem solid lightgreen; 
+    border-radius: 1rem; 
+}
+
+.form-btn{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border: 0.25rem solid white; 
+    border-radius: 1rem; 
+    background-color: orange;
+    color: white;
+}
+
